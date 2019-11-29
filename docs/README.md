@@ -26,11 +26,11 @@ tnpm i -g @ali/rmx-cli
 ### 套件
 #### 套件需要对照实现的统一的开发命令
  - `init` 初始化 
- - `add` 添加页面 [done]
- - `dev` 本地开发服务 [done]
- - `build` 本地构建(依赖def的abc.json配置) (cli内置了，一般不需要套件实现) [done]
- - `daily` 日常发布 (cli内置了，一般不需要套件实现) [done]
- - `publish` 正式发布 (cli内置了，一般不需要套件实现) [done]
+ - `add` 添加页面 
+ - `dev` 本地开发服务 
+ - `build` 本地构建(依赖def的abc.json配置) (cli内置了，一般不需要套件实现) 
+ - `daily` 日常发布 (cli内置了，一般不需要套件实现) 
+ - `publish` 正式发布 (cli内置了，一般不需要套件实现) 
  - `test` 测试
 
 #### 套件安装地址
