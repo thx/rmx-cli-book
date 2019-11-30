@@ -21,6 +21,14 @@ rmx-cli实现了一个专门用来辅助开发套件(插件)的套件 `rmx-dev`
 
 <img src="https://img.alicdn.com/tfs/TB1CxJ2oHr1gK0jSZR0XXbP8XXa-1170-910.png" width="70%">
 
+套件调试开发：
+  - 运行 `rmx init [你的套件名]`，即可执行当前套件里的init命令
+  - 在你init完的项目里，必须有配置rmxConfig: { "kit": "[你的套件名]"}
+  - 其他套件必要的命令逐一实现调试即可
+
+插件调试开发：
+  - 运行 `rmx [你的插件名]`，即可执行当前插件里的代码
+
 
 #### 发布
 
