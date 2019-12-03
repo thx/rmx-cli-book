@@ -46,7 +46,9 @@ module.exports = async (rmx) => {
     //rmx提供一些实用方法，如对接平台的接口创建项目，保存配置等
     //rmx.util提供一些常用的工具方法，如spawn
 
-    const Kit = {}
+    const Kit = {
+        commands: {}
+    }
 
     //配置遵循commander工具的配置
     //多参数的以数组形式
