@@ -122,7 +122,7 @@ module.exports = async (rmx) => {
     Kit.commands.daily = {
 
         //执行命令前的勾子函数
-        async before() {
+        async before(options) {
             console.log(`hook before...`)
             // throw new Error('执行错误'); // 抛出异常，将不再执行相关命令动作，包括 after hook 也不会执行
             // return false; // 返回 false，将不再执行相关命令动作，但是会执行 after hook
@@ -130,11 +130,12 @@ module.exports = async (rmx) => {
         },
 
         //执行命令后的勾子函数
-        async after() {
+        async after(options) {
             console.log(`hook afeter...`)
         }
-
     }
+
+    Kit.commands.publish = {}
 
     //测试命令
     Kit.commands.test = {
