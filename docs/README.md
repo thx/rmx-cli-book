@@ -55,7 +55,9 @@ module.exports = async (rmx) => {
     //rmx-cli内置了init, dev, add, build, daily, publish, test 七个命令
     //套件可自行覆盖实现这些命令，也可增加额外的这七个固定命令以外的命令来辅助套件开发
 
-    //初始化项目，可用yeoman或git clone形式创建脚手架
+    //初始化项目，cli内置实现了，只需要提供脚手架地址即可
+    //同时提供参数标识是否自动创建gitlab,iconfont,chartpar,rap2,def等平台项目
+    //提供before, after钩子来进行执行命令前后的一些杂事
     Kit.commands.init = {
         command: 'init',
         description: 'init的描述',
@@ -81,6 +83,7 @@ module.exports = async (rmx) => {
 
     //本地开发服务
     Kit.commands.dev = {
+        enableSudo: true, //标识当前命令是否允许sudo执行，默认cli所有命令不可sudo运行，以免污染文件权限
         command: 'dev',
         description: 'dev的描述',
         options: [] //命令的参数
