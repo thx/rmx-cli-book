@@ -1,18 +1,18 @@
 ### 辅助开发套件(插件)的SDK
 
-rmx-cli实现了一个专门用来辅助开发套件(插件)的套件 `rmx-dev`
+rmx-cli实现了一个专门用来辅助开发套件(插件)的套件 `dev`
 
 ### 用法
 
 #### 初始化
 
-执行 `rmx init rmx-dev` 选择开发类型(套件/插件)
+执行 `rmx init dev` 选择开发类型(套件/插件)
 
-<img src="https://img.alicdn.com/tfs/TB1fiF2oKH2gK0jSZFEXXcqMpXa-538-164.png" width="36%">
+<img src="https://img.alicdn.com/tfs/TB1Dm5mqoH1gK0jSZSyXXXtlpXa-622-154.png" width="36%">
 
 随后填写资料即可初始化好一个套件(插件)
 
-<img src="https://img.alicdn.com/tfs/TB1M7VZoFT7gK0jSZFpXXaTkpXa-1088-678.png" width="70%">
+<img src="https://img.alicdn.com/tfs/TB1bDalqXY7gK0jSZKzXXaikpXa-1226-854.png" width="70%">
 
 
 #### 本地开发
