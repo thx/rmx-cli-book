@@ -1,5 +1,6 @@
 * [rmx-cli]()
-* [套件](kit)
-* [插件](plugin)
 * [开发SDK](sdk)
+* [套件示例](kit)
+* [插件示例](plugin)
+* [rmx实例api](rmx-api)
 * [webui](webui)
