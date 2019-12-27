@@ -7,8 +7,8 @@ rmx-cli主要是基于magix-cli做了更高一层抽象，抽象出三个层级�
  - 套件命令 (套件是针对框架体系一系列的命令集成，magix-cli会以套件形式接入rmx-cli，针对react体系也会有另一个套件)
  - 插件命令 (一些与项目无关的通用的全局功能以插件形式接入，如之前的`mm createDaily`, `mm clear`)
 
-#### 全局安装
-请先安装Xcode，执行命令
+#### 如何安装
+请先安装Xcode，在终端执行命令
 ```
 xcode-select --install
 ```
