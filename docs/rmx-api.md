@@ -359,6 +359,21 @@ const branch = await rmx.utils.getPrecentBranch() //'daily/0.0.1'
 
 ---
 
+
+#### rmx.dataplus.joinDataplus(name, spma) `[async]`
+接口说明：接入数据小站dataplus
+
+入参：
+- name `[string]` 项目名称
+- spma `[string]` spma字段
+
+示例：
+```javascript
+    await rmx.dataplus.joinDataplus('mmtest1', 'a2e3k')
+```
+
+---
+
 ### 对接clue的接口
 
 #### rmx.clue.createProject(name) `[async]`
