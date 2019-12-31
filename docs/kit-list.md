@@ -18,7 +18,7 @@ magix体系的套件，提供的命令与原`magix-cli`一致，入口命令做�
 `rmx init react`
 
 ##### 套件说明
-react体系的套件，详见xxxx (文档TODO)
+react体系的套件，文档详见 https://yuque.antfin-inc.com/books/share/a5052e47-4ffd-460c-8088-9fd883cd3ee6
 
 
 ##### 作者
