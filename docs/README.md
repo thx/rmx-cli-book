@@ -8,12 +8,7 @@ rmx-cli主要是基于magix-cli做了更高一层抽象，抽象出三个层级�
  - 插件命令 (一些与项目无关的通用的全局功能以插件形式接入，如之前的`mm createDaily`, `mm clear`)
 
 #### 如何安装
-请先安装Xcode，在终端执行命令
-```
-xcode-select --install
-```
-
-xcode安装完毕后执行
+在终端执行以下命令即可完成安装
 
 ```node
 tnpm i -g @ali/rmx-cli
