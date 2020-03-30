@@ -6,11 +6,12 @@ rmx-cli实现了一个专门用来辅助开发套件(插件)的套件 `dev`
 
 执行 `rmx init dev` 选择开发类型(套件/插件)
 
-<img src="https://img.alicdn.com/tfs/TB1Dm5mqoH1gK0jSZSyXXXtlpXa-622-154.png" width="36%">
+<img src="https://img.alicdn.com/tfs/TB1lV8uAhD1gK0jSZFsXXbldVXa-698-172.png" width="36%">
 
 随后填写资料即可初始化好一个套件(插件)
+> `【请输入项目名称】` 在插件情形下为插件的命令名，套件情形下为套件的名称
 
-<img src="https://img.alicdn.com/tfs/TB1bDalqXY7gK0jSZKzXXaikpXa-1226-854.png" width="70%">
+<img src="https://img.alicdn.com/tfs/TB1VbhzAbY1gK0jSZTEXXXDQVXa-1228-1068.png" width="70%">
 
 
 #### 本地开发
