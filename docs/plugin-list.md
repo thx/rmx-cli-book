@@ -2,7 +2,7 @@
 ###  clear
 
 ##### 简介：
-一键清除chrome的hsts及dns缓存
+一键清除chrome的hsts及dns缓存，使用说明详见：https://thx.github.io/magix-cli-book/#/clearDnsHsts
 
 ##### 用法：
 `rmx clear` 
@@ -35,3 +35,18 @@
 - `-t, --timestamp` 是否时间戳形式
 
 ---
+
+###  magixBuild
+
+##### 简介：
+magix框架代码的纯本地构建插件
+
+##### 用法：
+`rmx magixBuild` 
+
+##### 参数：
+- 无
+
+##### 说明：
+
+与`rmx build`(云端构建)不同的是，此命令为纯本地构建，即构建逻辑由插件内置，而不是走DEF平台
