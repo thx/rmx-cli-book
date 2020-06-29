@@ -1,3 +1,17 @@
+
+#### 初始化一个套件项目
+执行 `rmx init dev` 选择 `套件`，即可初始化一个套件项目，项目目录如下：
+
+``` 
+[套件项目目录]
+├── index.js
+└── commands
+    ├── add.js
+    ├── dev.js
+    ├── init.js
+    └── test.js
+```
+
 #### 套件需要对照实现的开发命令
  - `add` 添加页面 
  - `dev` 本地开发服务 
@@ -8,9 +22,7 @@
 > `build` `daily` `publish`三个命令也无需实现，统一由cli调用def来进行构建与发布，只需要确保项目根目录下有abc.json配置即可(详见https://builder.alibaba-inc.com/document?slug=config)
 
 
-#### 套件代码示例
-
-> 套件模块包含一个rmx实例，提供一些实用方法，如对接平台的接口创建项目，保存配置等，详见 [rmx实例api](rmx-api)
+`/index.js` 代码示例：
 
 ```javascript
 module.exports = async (rmx) => {
@@ -99,6 +111,9 @@ module.exports = async (rmx) => {
     return Kit
 }
 ```
+
+> 套件模块包含一个rmx实例，提供一些实用方法，如对接平台的接口创建项目，保存配置等，详见 [rmx实例api](rmx-api)
+
 
 #### 注意事项
 - 套件提供的脚手架的package.json里必须包含标识

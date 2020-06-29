@@ -1,6 +1,16 @@
 
-#### 插件代码示例
-> 插件模块包含一个rmx实例，提供一些实用方法，如对接平台的接口创建项目，保存配置等，详见 [rmx实例api](rmx-api)
+#### 初始化一个插件项目
+
+执行 `rmx init dev` 选择 `插件`，然后输入项目名称 (项目名称即为该命令名称)，即可初始化一个插件项目，项目目录如下：
+
+``` 
+[插件项目目录]
+├── index.js
+└── commands
+    └── index.js
+```
+
+`/index.js` 代码示例：
 
 ```javascript
 module.exports = async (rmx) => {
@@ -26,5 +36,6 @@ module.exports = async (rmx) => {
 }
 
 ```
+> 插件模块包含一个rmx实例，提供一些实用方法，如对接平台的接口创建项目，保存配置等，详见 [rmx实例api](rmx-api)
 
 
