@@ -1,6 +1,6 @@
 #### webui可视化操作界面
 
-执行 `rmx web` 会自动打开浏览器，访问webui：
+执行 `mm web` 会自动打开浏览器，访问webui：
 
 <img src="https://img.alicdn.com/tfs/TB1nqz5r.Y1gK0jSZFMXXaWcVXa-1700-1010.png">
 

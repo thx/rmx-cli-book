@@ -1,6 +1,6 @@
 
 #### 初始化一个套件项目
-执行 `rmx init dev` 选择 `套件`，即可初始化一个套件项目，项目目录如下：
+执行 `mm init dev` 选择 `套件`，即可初始化一个套件项目，项目目录如下：
 
 ``` 
 [套件项目目录]
@@ -34,7 +34,7 @@ module.exports = async (rmx) => {
      * 配置遵循commander的配置
      * commander文档：https://github.com/tj/commander.js/blob/HEAD/Readme_zh-CN.md
      * 多参数的以二维数组形式
-     * rmx-cli内置了init, dev, add, build, daily, publish, test 七个命令
+     * mm-cli内置了init, dev, add, build, daily, publish, test 七个命令
      * 套件可自行覆盖实现这些命令，也可增加额外的这七个固定命令以外的命令来辅助套件开发
      * 所有命令均支持配置before, after钩子函数来进行执行命令前后的一些自定义处理
     */
