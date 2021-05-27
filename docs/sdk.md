@@ -1,48 +1,50 @@
-#### 辅助开发套件(插件)的SDK
+### 辅助开发套件(插件)的SDK
 
 mm-cli实现了一个专门用来辅助开发套件(插件)的套件 `dev`
 
-#### 使用方法
+#### 初始化套件/插件
 
 执行 `mm init dev` 选择开发类型(套件/插件)
 
-<img src="https://img.alicdn.com/tfs/TB1lV8uAhD1gK0jSZFsXXbldVXa-698-172.png" width="36%">
+<img src="https://img.alicdn.com/tfs/TB1lV8uAhD1gK0jSZFsXXbldVXa-698-172.png" width="40%">
 
 随后填写资料即可初始化好一个套件(插件)
-> `【请输入项目名称】` 在插件情形下为插件的命令名，套件情形下为套件的名称
+> `【请输入应用名称】` 在插件情形下为插件的命令名，套件情形下为套件的名称
 
-<img src="https://img.alicdn.com/tfs/TB1VbhzAbY1gK0jSZTEXXXDQVXa-1228-1068.png" width="70%">
-
-
-#### 本地开发
-
-执行 `mm dev` 会将当前套件(插件)link到mm-cli的套件(插件)安装目录下，接下来就可以直接调试你的套件(插件)了
-
-<img src="https://img.alicdn.com/tfs/TB1CxJ2oHr1gK0jSZR0XXbP8XXa-1170-910.png" width="70%">
-
-套件调试开发：
-  - 运行 `mm init [你的套件名]`，即可执行当前套件里的init命令
-  - 在你init完的项目里，必须有配置rmxConfig: { "kit": "[你的套件名]"}
-  - 其他套件必要的命令逐一实现调试即可 (init, dev, add, test等等)
-
-插件调试开发：
-  - 运行 `mm [你的插件名]`，即可执行当前插件里的代码
-
-退出开发模式：
-  - 运行 `mm dev --exit` 即可取消link，退出本地开发模式
+<img src="https://img.alicdn.com/imgextra/i1/O1CN01tixAGz1lqVWLCG9Ez_!!6000000004870-2-tps-1424-852.png" width="80%">
 
 
+#### 本地开发套件/插件
 
-#### 发布
+1. 找 @崇志 或 @墨智 将当前开发套件/插件添加到 mm-cli 的alp配置里 （需要提供套件/插件名称、说明，如果是套件需要提供脚手架仓库）
+2. 当前项目根目录执行 `tnpm link` 
+3. 然后执行命令：
 
-本地开发调试完毕，执行 `mm publish` 即可发布当前套件(插件)到tnpm上 
+  __套件__ ：`MM_MODE=development npx mm install kit @ali/mm-kit-{{你的套件名称}}` 将当前套件 link 到本地 <br>
+  __插件__ ：`MM_MODE=development npx mm install plugin @ali/mm-plugin-{{你的插件名称}}` 将当前插件 link 到本地
+  
+4. 当前项目根目录执行 `mm dev` 即可进行本地开发测试了
 
-<img src="https://img.alicdn.com/tfs/TB1ZwF5oQL0gK0jSZFAXXcA9pXa-1164-1218.png" width="70%">
+##### 套件调试开发：
+  - 运行 `mm init [你的套件名]`，会读取你之前提交的套件对应的脚手架仓库列表，选择一个完成初始化项目
+  - 在你初始化好的脚手架项目里测试你的各个命令
+  - 默认套件包含以下命令：<br><br>
+    <img src="https://img.alicdn.com/imgextra/i3/O1CN01R7VSSk285Y4qB0rSu_!!6000000007881-2-tps-1416-434.png" width="80%">
+  - `app/commands.ts` 文件为所有命令定义入口
+  - 一般来说，`init` `daily` `publish` 不需要套件单独实现，mm-cli 内置了，套件只需实现 `dev` 以及其他套件所需的命令即可
+
+##### 插件调试开发：
+  - 运行 `mm [你的插件名]`，即可调试开发当前插件里的代码
+  - 插件主逻辑代码在 `src/index.ts` 里
+
+##### 退出开发模式：
+  - 项目根目录运行 `tnpm unlink` 即可取消link，退出本地开发模式
 
 
-> ps: 不需要手动修改package.json里的version，系统会自动在原来的版本上+1
 
-发布完毕，就可以将你开发好的套件(插件)信息提交给 `@崇志`，加入到mm-cli的可用套件(插件)里了。
+#### 如何发布
+
+更改 `package.json` 里的 version 版本，然后执行 `tnpm publish` 即可发布
 
 
 
